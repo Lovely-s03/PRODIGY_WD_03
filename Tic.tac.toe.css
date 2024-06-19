@@ -1,0 +1,88 @@
+*{
+    /* color: white; */
+    transition: 0.2s ease-in-out;
+
+}
+body{
+    background-color: lavender;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+   
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+ display: grid;
+   
+    width: 170px;
+    height: 21vh;
+    margin: auto;
+
+position: relative;
+}
+.game h1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+margin: 0;
+    
+}
+.game .turnBox {
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.game .turnBox :nth-child(even){
+    border-right: none;
+}
+.background{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 85px;
+height: 59px;
+background-color:hotpink;
+z-index: -1;
+}
+
+.gameboard{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 30px auto;
+    
+}
+.box{
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid black ;
+}
+.box:hover{
+    background-color:lightsalmon;
+
+}
+#restartBtn{
+    background-color: red;
+    padding: 10px 25px;
+    border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  /* display: none; */
+}
+#restartBtn:hover{
+    padding: 10px 40px;
+    background-color: aqua;
+    color: black;
+}
